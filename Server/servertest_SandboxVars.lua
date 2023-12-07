@@ -36,7 +36,7 @@ SandboxVars = {
     -- 23 = 21 Hours
     -- 24 = 22 Hours
     -- 25 = 23 Hours
-    DayLength = 2,
+    DayLength = 6,
     StartYear = 1,
     -- Default=July
     -- 1 = January
@@ -185,7 +185,7 @@ SandboxVars = {
     -- Number of days until 100% growth. -1 means no growth. Zero means use the Erosion Speed option. Maximum 36,500 (100 years). Minimum=-1 Maximum=36500 Default=0
     ErosionDays = 0,
     -- Modifies the base XP gain from actions by this number. Minimum=0.00 Maximum=1000.00 Default=1.00
-    XpMultiplier = 10.0,
+    XpMultiplier = 100.0,
     -- Determines if the XP multiplier affects passively levelled skills eg. Fitness and Strength.
     XpMultiplierAffectsPassive = true,
     -- Use this to multiply or reduce engine general loudness. Minimum=0.00 Maximum=100.00 Default=1.00
@@ -197,7 +197,7 @@ SandboxVars = {
     -- 2 = Fast
     -- 3 = Normal
     -- 4 = Slow
-    Farming = 3,
+    Farming = 2,
     -- Controls the time it takes for food to break down in a composter. Default=2 Weeks
     -- 1 = 1 Week
     -- 2 = 2 Weeks
@@ -613,6 +613,51 @@ SandboxVars = {
         RallyGroupSeparation = 15,
         -- How close members of a group stay to the group's leader. Minimum=1 Maximum=10 Default=3
         RallyGroupRadius = 3,
+    },
+    FunctionalAppliances = {
+        BeerKegsChance = 3,
+        BeerKegsFilledAmount = 3,
+        SyrupsChance = 3,
+        SyrupsFilledAmount = 3,
+        FATheatreChance = 3,
+        FAFreshTheatreChance = 3,
+        FADeepFryerOil = 3,
+        FAZombieItemsSpawn = true,
+        FAPayPhonesAttractZombies = true,
+        FASapphsCookingTheatreChance = 3,
+        FASapphsCookingFreshTheatreChance = 3,
+        FACCSTheatreChance = 3,
+    },
+    InventoryTetris = {
+        EnableSearch = false,
+        -- Minimum=1 Maximum=250 Default=45
+        SearchTime = 45,
+        -- Minimum=0 Maximum=8 Default=0
+        BonusGridSize = 0,
+        EnableGravity = false,
+    },
+    DaysGone = {
+        DaysLater = false,
+        IncludePreOutbreak = false,
+    },
+    SkillRecoveryJournal = {
+        -- Minimum=1 Maximum=100 Default=100
+        RecoveryPercentage = 100,
+        -- Minimum=0.00 Maximum=1000.00 Default=1.00
+        TranscribeSpeed = 1.0,
+        -- Minimum=0.00 Maximum=1000.00 Default=1.00
+        ReadTimeSpeed = 1.0,
+        RecoverProfessionAndTraitsBonuses = false,
+        TranscribeTVXP = false,
+        RecoverPassiveSkills = false,
+        RecoverCombatSkills = true,
+        RecoverFirearmSkills = true,
+        RecoverCraftingSkills = true,
+        RecoverSurvivalistSkills = true,
+        RecoverAgilitySkills = true,
+        RecoverRecipes = true,
+        RecoveryJournalUsed = false,
+        Craftable = true,
     },
     ObviousCollecting = {
         DisableLoot = false,
