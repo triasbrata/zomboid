@@ -628,14 +628,6 @@ SandboxVars = {
         FASapphsCookingFreshTheatreChance = 3,
         FACCSTheatreChance = 3,
     },
-    InventoryTetris = {
-        EnableSearch = false,
-        -- Minimum=1 Maximum=250 Default=45
-        SearchTime = 45,
-        -- Minimum=0 Maximum=8 Default=0
-        BonusGridSize = 0,
-        EnableGravity = false,
-    },
     DaysGone = {
         DaysLater = false,
         IncludePreOutbreak = false,
